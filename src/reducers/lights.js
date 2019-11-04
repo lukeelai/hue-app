@@ -97,6 +97,51 @@ const filtersReducerDefaultState = {
       },
       uniqueid: "00:17:88:01:00:bd:c7:b9-0b",
       swversion: "5.105.0.21169"
+    },
+    3: {
+      state: {
+        on: false,
+        bri: 1,
+        hue: 33761,
+        sat: 254,
+        effect: "none",
+        xy: [0.3171, 0.3366],
+        ct: 159,
+        alert: "none",
+        colormode: "xy",
+        mode: "homeautomation",
+        reachable: true
+      }
+    },
+    4: {
+      state: {
+        on: false,
+        bri: 1,
+        hue: 33761,
+        sat: 254,
+        effect: "none",
+        xy: [0.3171, 0.3366],
+        ct: 159,
+        alert: "none",
+        colormode: "xy",
+        mode: "homeautomation",
+        reachable: true
+      }
+    },
+    5: {
+      state: {
+        on: false,
+        bri: 1,
+        hue: 33761,
+        sat: 254,
+        effect: "none",
+        xy: [0.3171, 0.3366],
+        ct: 159,
+        alert: "none",
+        colormode: "xy",
+        mode: "homeautomation",
+        reachable: true
+      }
     }
   }
 };

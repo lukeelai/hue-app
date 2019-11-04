@@ -3,8 +3,8 @@ import Switch from "react-switch";
 
 const Lights = props => {
   return (
-    <label>
-      <span>Light {props.number}</span>
+    <label className="row">
+      <span className="col-md-2 text-center">Light {props.number}</span>
       <Switch
         checked={props.lights.sampleState[props.number].state.on}
         onChange={() => props.handleChange(props.number)}
@@ -17,7 +17,7 @@ const Lights = props => {
         activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
         height={20}
         width={48}
-        className="react-switch"
+        className="react-switch col-md-2 "
         id="material-switch"
       />
     </label>
