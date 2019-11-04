@@ -1,5 +1,7 @@
 import React from "react";
-import Switch from "@material-ui/core/Switch";
+import { Switch, Tooltip } from "@material-ui/core";
+import ErrorIcon from "@material-ui/icons/Error";
+
 const Lights = props => {
   return (
     <label className="row">
@@ -13,6 +15,13 @@ const Lights = props => {
         inputProps={{ "aria-label": "primary checkbox" }}
         disabled={!props.lights.sampleState[props.number].state.reachable}
       />
+      <Tooltip title="Unreachable" placement="right">
+        <ErrorIcon
+          color="error"
+          fontSize="small"
+          hidden={props.lights.sampleState[props.number].state.reachable}
+        />
+      </Tooltip>
     </label>
   );
 };
