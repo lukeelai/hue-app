@@ -14,8 +14,7 @@ class LightListContainer extends React.Component {
   }
 
   handleChange(e) {
-    console.log(e.target);
-    this.props.setLightState();
+    this.props.setLightState(e);
   }
 
   render() {

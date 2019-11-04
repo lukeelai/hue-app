@@ -7,7 +7,7 @@ const Lights = props => {
       <span>Light {props.number}</span>
       <Switch
         checked={props.lights.sampleState[props.number].state.on}
-        onChange={props.handleChange}
+        onChange={() => props.handleChange(props.number)}
         onColor="#86d3ff"
         onHandleColor="#2693e6"
         handleDiameter={30}
