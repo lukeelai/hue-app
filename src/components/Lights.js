@@ -4,16 +4,15 @@ import ErrorIcon from "@material-ui/icons/Error";
 
 const PrettoSlider = withStyles({
   root: {
-    color: "#00000000",
-    height: 5,
-    background: "linear-gradient(to right, #ebd234, #fff)"
+    color: "#ebd234",
+    height: 1
   },
   thumb: {
-    height: 30,
-    width: 30,
-    backgroundColor: "white",
-    border: "2px solid black",
-    marginTop: -12,
+    height: 24,
+    width: 24,
+    backgroundColor: "#fff",
+    border: "2px solid currentColor",
+    marginTop: -8,
     marginLeft: -12,
     "&:focus,&:hover,&$active": {
       boxShadow: "inherit"
@@ -22,8 +21,7 @@ const PrettoSlider = withStyles({
   active: {},
   valueLabel: {
     left: "calc(-50% + 4px)",
-    marginLeft: 6,
-    color: "black"
+    WebkitTextFillColor: "black"
   },
   track: {
     height: 8,
