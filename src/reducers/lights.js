@@ -1,4 +1,4 @@
-import { SET_LIGHT_STATE } from "../actions/actionTypes";
+import { SET_LIGHT_STATE, UPDATE_LIGHT_STATE } from "../actions/actionTypes";
 
 const filtersReducerDefaultState = {
   sampleState: {
@@ -165,6 +165,15 @@ export default (state = filtersReducerDefaultState, action) => {
           }
         }
       };
+    case UPDATE_LIGHT_STATE:
+      state.sampleState.map(light => {
+        if (light === action.light) {
+          return { ...light, ...action.updates };
+        } else {
+          return state;
+        }
+      });
+      return state;
     default:
       return state;
   }
