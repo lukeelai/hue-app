@@ -21,7 +21,7 @@ const filtersReducerDefaultState = {
         lastinstall: "2018-01-02T19:24:20"
       },
       type: "Extended color light",
-      name: "Hue color lamp 7",
+      name: "Hallway Light",
       modelid: "LCT007",
       manufacturername: "Philips",
       productname: "Hue color lamp",
@@ -62,14 +62,14 @@ const filtersReducerDefaultState = {
         alert: "none",
         colormode: "xy",
         mode: "homeautomation",
-        reachable: true
+        reachable: false
       },
       swupdate: {
         state: "noupdates",
         lastinstall: "2018-01-02T19:24:20"
       },
       type: "Extended color light",
-      name: "Hue color lamp 7",
+      name: "Office Door Light",
       modelid: "LCT007",
       manufacturername: "Philips",
       productname: "Hue color lamp",
@@ -111,7 +111,8 @@ const filtersReducerDefaultState = {
         colormode: "xy",
         mode: "homeautomation",
         reachable: true
-      }
+      },
+      name: "Office Light"
     },
     4: {
       state: {
@@ -126,7 +127,8 @@ const filtersReducerDefaultState = {
         colormode: "xy",
         mode: "homeautomation",
         reachable: true
-      }
+      },
+      name: "Living Room Light"
     },
     5: {
       state: {
@@ -141,7 +143,8 @@ const filtersReducerDefaultState = {
         colormode: "xy",
         mode: "homeautomation",
         reachable: true
-      }
+      },
+      name: "Bedroom Light"
     }
   }
 };

@@ -4,7 +4,7 @@ import Switch from "react-switch";
 const Lights = props => {
   return (
     <label className="row">
-      <span className="col-md-2 text-center">Light {props.number}</span>
+      <span className="col-md-2 text-center">{props.name}</span>
       <Switch
         checked={props.lights.sampleState[props.number].state.on}
         onChange={() => props.handleChange(props.number)}
@@ -19,6 +19,8 @@ const Lights = props => {
         width={48}
         className="react-switch col-md-2 "
         id="material-switch"
+        disabled={!props.lights.sampleState[props.number].state.reachable}
+        //disabled-switch - if not reachable
       />
     </label>
   );

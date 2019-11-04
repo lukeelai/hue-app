@@ -9,9 +9,10 @@ const LightList = props => {
       {Object.keys(props.lights.sampleState).map(key => {
         return (
           <Lights
+            key={key}
             {...props}
             handleChange={props.handleChange}
-            key={key}
+            name={props.lights.sampleState[key].name}
             number={key}
           />
         );
