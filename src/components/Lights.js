@@ -12,7 +12,8 @@ class Lights extends React.Component {
   }
 
   handleChange() {
-    this.props.setLightState();
+    this.props.setLightState(1);
+    console.log(this.props.lights.sampleState[1].state.on);
   }
 
   render() {
@@ -20,7 +21,7 @@ class Lights extends React.Component {
       <label>
         <span>Light 1</span>
         <Switch
-          checked={this.props.lights.checked}
+          checked={this.props.lights.sampleState[1].state.on}
           onChange={this.handleChange}
           onColor="#86d3ff"
           onHandleColor="#2693e6"
