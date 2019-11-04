@@ -1,7 +1,7 @@
 import React from "react";
 
-//components
-import LightList from "./LightList";
+//Containers
+import LightListContainer from "../containers/LightListContainer";
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class HomePage extends React.Component {
         <>
           <button onClick={this.getIP}>Click</button>
           <br />
-          <LightList />
+          <LightListContainer />
         </>
       </div>
     );
